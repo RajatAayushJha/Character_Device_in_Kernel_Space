@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Edit Data
+    </title>
+</head>
+<body>
+    <h1>Welcome {{ user }}</h1>
+    <h3>Edit data:</h3>
+    <form action="/edit" method="POST">
+        <input type="hidden" name="user" value="{{ user }}">
+        <input type="hidden" name="key" value="{{ key }}">
+        <textarea name="data" cols="50" rows="30">{{ data }}</textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
